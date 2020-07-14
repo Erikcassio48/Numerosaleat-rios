@@ -1,4 +1,5 @@
 from random import randint
+from collections import defaultdict
 
 x = range(1000)
 
@@ -30,6 +31,12 @@ def média(lista_tamanho):
     print(média)
 
 média(lista_tamanho)
-
 numeros_ordenados = sorted(y)
+
+#Obtendo a Moda
+word_counts = defaultdict(int)
+
+for word in numeros_ordenados:
+    word_counts[word] +=1
+    print (word_counts)
 
