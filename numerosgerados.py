@@ -38,5 +38,11 @@ word_counts = defaultdict(int)
 
 for word in numeros_ordenados:
     word_counts[word] +=1
-    print (word_counts)
+    
+
+max_value = max(word_counts.values())
+max_keys = [k for k, v in word_counts.items() if v == max_value] 
+
+print (8)
+print(max_value, max_keys)
 
